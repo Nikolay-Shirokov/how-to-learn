@@ -1,3 +1,10 @@
+:root {
+  --basic-dark: #1f1f1f;
+  --basic-light: #f2f2f2;
+  --basic-blue: #2f80ed;
+  --basic-black: #000;
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
