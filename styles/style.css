@@ -59,7 +59,7 @@
 .header__main-illustration {
   height: 608px;
   width: 756px;
-/*   background-image: url(../images/header-image.png);
+  /*   background-image: url(../images/header-image.png);
   background-size: cover;
   background-repeat: no-repeat; */
   position: absolute;
@@ -69,6 +69,7 @@
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+
 .header__square-pic {
   height: 568px;
   width: 568px;
@@ -82,6 +83,7 @@
 
 .logo {
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .logo_place_header {
@@ -282,6 +284,7 @@
 }
 
 /* и элемента с модификатором вида ключ-значение */
+
 .table__cell_theme_dark {
   width: 200px;
   color: var(--basic-white);
@@ -289,3 +292,93 @@
   margin-top: 80px;
   z-index: 1;
 }
+
+/* Подвал сайта, блок footer */
+
+.footer {
+  min-height: 350px;
+  background-color: var(--basic-dark);
+  color: var(--basic-white);
+  /*   display: flex;
+  flex-direction: column;
+  align-items: stretch; */
+  position: relative;
+}
+
+.footer__colomns {
+  width: 90%;
+  /*   height: 100%; */
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 60px auto 40px auto;
+}
+
+.footer__colomn_content_copyright {
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo_place_footer {
+  background-image: url(../images/logo_place_footer.svg);
+  width: 183px;
+  height: 35px;
+}
+
+.footer__author {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__colomn-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+.footer__colomn-links {
+  list-style-type: none;
+  position: relative;
+  padding: 0;
+  margin: 0 0 16px 0;
+}
+
+.footer__colomn-link {
+  color: var(--basic-white);
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
+  /*   margin-bottom: 10px; */
+  display: block;
+}
+
+.social-icon {
+  margin-right: 10px;
+}
+
+/* Не получилось сделать через псевдоэлемент. проблемы с позиционированием */
+
+/* .footer__colomn-link_src_facebook{
+  padding-left: 26px;
+}
+
+.footer__colomn-link_src_facebook::before {
+  content: "";
+  position: absolute;
+  left: -26px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/facebook_color_white.svg);
+   background-position: center;
+} */
