@@ -3,6 +3,7 @@
   --basic-light: #f2f2f2;
   --basic-blue: #2f80ed;
   --basic-black: #000;
+  --basic-white: white;
 }
 
 .page {
@@ -207,14 +208,6 @@
   margin-bottom: 0;
 }
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-}
-
 /* Секция, блок feynman */
 
 .feynman {
@@ -254,4 +247,45 @@
   position: absolute;
   top: 50%;
   right: 48px;
+}
+
+/* Секция, блок kaufman */
+
+.kaufman {
+  background-color: var(--basic-dark);
+  overflow: hidden;
+  position: relative;
+}
+
+.kaufman__triangle {
+  width: 877px;
+  height: 877px;
+  background-image: url(../images/kaufman-triangle.svg);
+  position: absolute;
+  right: -210px;
+  top: 0;
+  z-index: 0;
+}
+
+.table-header__section-title_theme_dark {
+  color: var(--basic-white);
+  margin-top: 90px;
+}
+
+.table-header__section-subtitle_theme_dark {
+  color: var(--basic-white);
+}
+
+.table_theme_dark {
+  width: 1100px;
+  margin-bottom: 90px;
+}
+
+/* и элемента с модификатором вида ключ-значение */
+.table__cell_theme_dark {
+  width: 200px;
+  color: var(--basic-white);
+  margin-right: 0;
+  margin-top: 80px;
+  z-index: 1;
 }
