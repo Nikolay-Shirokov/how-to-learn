@@ -264,7 +264,7 @@
   background-color: var(--basic-dark);
   overflow: hidden;
   position: relative;
-  z-index: -2;
+  z-index: -2; /* Если у блока будет больше чем у треугольника, то фон блока его закроет :( */
 }
 
 .kaufman__triangle {
@@ -300,7 +300,7 @@
   color: var(--basic-white);
   margin-right: 0;
   margin-top: 80px;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 /* Подвал сайта, блок footer */
