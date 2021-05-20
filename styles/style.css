@@ -30,6 +30,7 @@
   display: flex;
   flex-direction: row;
   position: relative;
+  overflow: hidden;
 }
 
 .header__title {
@@ -38,7 +39,7 @@
   font-size: 102px;
   font-weight: bold;
   align-self: center;
-  margin-left: 64px;
+  margin: 0 0 0 64px;
   z-index: 3;
 }
 
@@ -49,11 +50,20 @@
   position: absolute;
   left: 64px;
   bottom: 30px;
+  margin: 0;
   z-index: 3;
 }
 
 .header__link {
   color: var(--basic-blue);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover {
+  color: brown;
 }
 
 .header__main-illustration {
@@ -162,8 +172,7 @@
   font-size: 60px;
   font-weight: bold;
   text-align: center;
-  margin-top: 100px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .section-subtitle {
@@ -210,7 +219,8 @@
 /* Секция, блок feynman */
 
 .feynman {
-  height: 890px;
+  min-height: 890px;
+  box-sizing: border-box;
   background-color: var(--basic-light);
   background-image: url(../images/feynman.png);
   background-position: 0 100%;
@@ -254,16 +264,19 @@
   background-color: var(--basic-dark);
   overflow: hidden;
   position: relative;
+  z-index: -2;
 }
 
 .kaufman__triangle {
   width: 877px;
   height: 877px;
   background-image: url(../images/kaufman-triangle.svg);
+  /* background-size: 877px 877px; */
+  background-size: contain;
   position: absolute;
   right: -210px;
   top: 0;
-  z-index: 0;
+  z-index: -1;
 }
 
 .section-title_theme_dark {
@@ -296,20 +309,20 @@
   min-height: 350px;
   background-color: var(--basic-dark);
   color: var(--basic-white);
-  /*   display: flex;
-  flex-direction: column;
+  display: flex;
+/*   flex-direction: column;
   align-items: stretch; */
-  position: relative;
+/*   position: relative; */
 }
 
 .footer__columns {
   width: 90%;
   /*   height: 100%; */
-  position: absolute;
+/*   position: absolute;
   left: 0;
   right: 0;
   top: 0;
-  bottom: 0;
+  bottom: 0; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
