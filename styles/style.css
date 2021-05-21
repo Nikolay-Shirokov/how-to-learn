@@ -193,6 +193,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto 100px auto;
+  padding: 0;
 }
 
 .table__cell {
@@ -264,7 +265,8 @@
   background-color: var(--basic-dark);
   overflow: hidden;
   position: relative;
-  z-index: -2; /* Если у блока будет больше чем у треугольника, то фон блока его закроет :( */
+  /* z-index: -2; */ /* Если у блока будет больше чем у треугольника, то фон блока его закроет :( */
+  z-index: 1; /* хм, спасибо. не очень понял почему так, видимо из-за вложенности, но поиграюсь в песочнице */
 }
 
 .kaufman__triangle {
@@ -282,10 +284,12 @@
 .section-title_theme_dark {
   color: var(--basic-white);
   margin-top: 90px;
+  /* z-index: 1; */
 }
 
 .section-subtitle_theme_dark {
   color: var(--basic-white);
+  /* z-index: 1; */
 }
 
 .table_theme_dark {
