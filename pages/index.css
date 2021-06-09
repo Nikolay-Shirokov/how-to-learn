@@ -3,6 +3,8 @@
 @import url(../blocks/root/root.css);
 @import url(../blocks/page/page.css);
 
+@import url(../blocks/rotation/rotation.css);
+
 @import url(../blocks/link/link.css);
 
 /* Шапка сайта, блок header */
