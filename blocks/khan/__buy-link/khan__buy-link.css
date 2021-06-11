@@ -3,4 +3,5 @@
   font-size: 30px;
   font-weight: normal;
   color: var(--basic-blue);
+  align-self: flex-start;
 }

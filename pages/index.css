@@ -48,7 +48,6 @@
 
 /* Секция, блок digits */
 @import url(../blocks/digits/digits.css);
-@import url(../blocks/table-header/table-header.css);
 @import url(../blocks/section-title/section-title.css);
 @import url(../blocks/section-title/_theme/section-title_theme_dark.css);
 @import url(../blocks/section-subtitle/section-subtitle.css);
